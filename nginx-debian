@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
   
   config.vm.provision "shell", inline: <<-SHELL
     apt update && apt upgrade -y
-    apt install screen net-tools -y
+    apt install net-tools -y
     apt install nginx -y
   SHELL
 
